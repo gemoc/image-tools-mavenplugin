@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.gemoc.image-tools-mavenplugin</groupId>
+	<artifactId>image-tools-plugin</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+	<name>Image Tools Maven Plugin</name>
+	<description>Maven plugin providing some image processing facilities</description>
+	<packaging>maven-plugin</packaging>
+	
+	<url>https://github.com/gemoc/image-tools-mavenplugin</url>
+	<issueManagement>
+		<url>https://github.com/gemoc/image-tools-mavenplugin/issues</url>
+		<system>GitHub Issues</system>
+	</issueManagement>
+	
+	<licenses>
+		<license>
+			<name>Eclipse Public License - v 2.0</name>
+			<url>https://www.eclipse.org/legal/epl-2.0/</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<scm>
+		<url>https://github.com/gemoc/git-sync-tools</url>
+		<connection>scm:git:git://github.com/gemoc/image-tools-mavenplugin.git</connection>
+	</scm>
+	<developers>
+		<developer>
+			<email>didier.vojtisek@inria.fr</email>
+			<name>Didier Vojtisek</name>
+			<url>https://github.com/dvojtise/</url>
+			<id>dvojtise</id>
+			<organization>Inria</organization>
+			<organizationUrl>http://www.inria.fr</organizationUrl>
+		</developer>
+	</developers>	
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-plugin-api</artifactId>
+			<version>3.8.1</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-core</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+	</dependencies>
+	<distributionManagement>
+        <repository>
+            <id>triskell-public-release</id>
+            <name>Triskell public release repository on maven.irisa.fr</name>
+            <url>http://maven.irisa.fr/artifactory/triskell-public-release</url>
+            <uniqueVersion>false</uniqueVersion>
+        </repository>
+        <snapshotRepository>
+            <id>triskell-public-snapshot</id>
+            <name>Triskell public snapshot repository on maven.irisa.fr</name>
+            <url>http://maven.irisa.fr/artifactory/triskell-public-snapshot</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
